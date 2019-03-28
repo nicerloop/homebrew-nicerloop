@@ -1,10 +1,12 @@
 cask 'lastpass-safari-extension' do
-  version '4.25.1'
-  sha256 'ea3d5447aab9537a1fe095ab81b6e49d7234c1bff8d9bc173958fd68bd6a650f'
+  version '4.26.0'
+  sha256 '9b21c542c18824dc967f0045d685b89b3b40f2fdfe85966c178614c6640d6eda'
 
   url 'https://download.cloud.lastpass.com/mac/LastPass.dmg'
   name 'LastPass Safari Extension'
   homepage 'https://blog.lastpass.com/2019/01/change-safari-extension.html/'
 
+  auto_updates true
+  
   app 'LastPass.app', target: 'LastPass Safari Extension.app'
 end
