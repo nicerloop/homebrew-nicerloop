@@ -1,6 +1,6 @@
 cask 'lastpass' do
-  version '4.26.0'
-  sha256 '9b21c542c18824dc967f0045d685b89b3b40f2fdfe85966c178614c6640d6eda'
+  version '4.27.2'
+  sha256 'd9bc5c2efa0a73cdb59e7117d46dc1b3886e7038e28444c7c04cc28c94f19014'
 
   url 'https://download.cloud.lastpass.com/mac/LastPass.dmg'
   name 'LastPass'
