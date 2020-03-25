@@ -1,9 +1,9 @@
 cask 'macos-catalina-patcher' do
-  version '1.3.0'
-  sha256 '128b39b3539809a67f0cd0da03b53a61d21731d5e891c58077fc33050fb525fc'
+  version '1.3.2'
+  sha256 'ebc51c6c134fb46ea8fb3c7555eadbcb7fda91c642d0ed2ede767f939cd027d8'
 
-  # ipfs.io/ipfs was verified as official when first introduced to the cask
-  url 'https://ipfs.io/ipfs/Qmdw4cRrrzBWGJXNhMpBx1QfVZ3kiUbKk1eWLPnw9XxZXt/macOS%20Catalina%20Patcher.dmg'
+  # github.com was verified as official when first introduced to the cask
+  url 'https://github.com/dosdude1/macos-catalina-patcher/releases/download/1.3.2/macOS.Catalina.Patcher.dmg'
   appcast 'http://dosdude1.com/catalina/changelog.html'
   name 'macOS Catalina Patcher'
   homepage 'http://dosdude1.com/catalina/'
