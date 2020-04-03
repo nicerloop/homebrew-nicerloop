@@ -7,7 +7,7 @@ class CmisWorkbench < Formula
   
   bottle :unneeded
   
-  depends_on :java => "1.7+"
+  depends_on "openjdk"
   
   def install
     rm Dir["*.bat"]
