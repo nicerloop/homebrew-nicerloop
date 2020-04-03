@@ -6,5 +6,10 @@ cask 'cbz-manager' do
   name 'cbzManager'
   homepage 'https://ollivierciviolsoftware.wordpress.com'
 
+  depends_on formula: 'unzip'
+  depends_on formula: 'unrar'
+  depends_on formula: 'p7zip'
+  depends_on formula: 'webp'
+
   app 'cbzManagerOsx.app'
 end
