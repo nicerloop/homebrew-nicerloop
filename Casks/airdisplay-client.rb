@@ -7,4 +7,11 @@ cask 'airdisplay-client' do
   homepage 'https://avatron.com/applications/air-display/'
 
   app 'Air Display.app'
+
+  zap trash: [
+               '~/Library/Application Support/com.avatron.airdisplaymac.webstore',
+               '~/Library/Caches/com.avatron.airdisplaymac.webstore',
+               '~/Library/Preferences/com.avatron.airdisplaymac.webstore.plist',
+               '~/Library/Saved Application State/com.avatron.airdisplaymac.webstore.savedState',
+             ]
 end
