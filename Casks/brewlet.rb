@@ -1,6 +1,6 @@
 cask 'brewlet' do
-    version '1.3'
-    sha256 'ddced5614bca49017906b7bb71e4c599fa159837daa4011ca2fd3913d68eee59'
+    version '1.4'
+    sha256 '5e41c055cf392dd5b7469298445608b6bd3330b68fd11059170a9a47c21949ff'
   
     url "https://github.com/zkokaja/Brewlet/releases/download/v#{version}/Brewlet.zip"
     appcast 'https://github.com/zkokaja/Brewlet/releases.atom'
