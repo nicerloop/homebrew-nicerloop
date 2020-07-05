@@ -1,8 +1,8 @@
 class MacosGuestVirtualbox < Formula
   desc "Automted installer of macOS 10.13+ guests in Virtualbox"
   homepage "https://github.com/myspaghetti/macos-guest-virtualbox"
-  url "https://github.com/myspaghetti/macos-guest-virtualbox/releases/download/0.91.0/macos-guest-virtualbox.sh"
-  sha256 "7c1ae887a28dc9c87609b57f047b27c1dd57fc55c38414ff809bfdc373539fe9"
+  url "https://github.com/myspaghetti/macos-virtualbox/releases/download/0.93.7/macos-guest-virtualbox.sh"
+  sha256 "8f27aad76d6e4b1b8127a6632065ef01d6812b5d875e4adaa6fecb7cab9c096f"
 
   bottle :unneeded
 
