@@ -1,6 +1,6 @@
 cask 'cbz-manager' do
-  version '2020-06-25,86ff3fcfa2ce116402afd60c8908bd0f311a08c0'
-  sha256 '7ca39627b17e222115e2ef70e14c51ad3ab38794ea61f8f1c8084ff0ed07274e'
+  version '2020-08-21,7cebf88c4170b64d4684250634e5358cd9b0ec83'
+  sha256 '70150351a8074562e407cb215b54dd62ca5486bd8d91ee3f4c6299786bb24446'
 
   url "https://github.com/ociviol/cbzManager/raw/#{version.after_comma}/precompiled%20binairies/Mac%20OsX/cbzManagerOsx.zip"
   name 'cbzManager'
