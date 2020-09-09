@@ -1,6 +1,6 @@
 cask 'retroactive' do
-  version '1.8'
-  sha256 'd7975ab31c644a70eea4bea233e841ac863f3710ca317e97288bf0adb4feeb3c'
+  version '1.9'
+  sha256 '6f856bcdd62a25d31a16670a7091401f173059194136bfa5f83caae2255b28ae'
 
   url "https://github.com/cormiertyshawn895/Retroactive/releases/download/#{version}/Retroactive.#{version}.zip"
   appcast 'https://github.com/cormiertyshawn895/Retroactive/releases.atom'
