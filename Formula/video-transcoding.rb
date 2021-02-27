@@ -15,6 +15,6 @@ class VideoTranscoding < Formula
     system "gem", "build", "video_transcoding.gemspec"
     system "gem", "install", "video_transcoding-#{version}.gem"
     bin.install Dir[libexec/"bin/*"]
-    bin.env_script_all_files(libexec/"bin", :GEM_HOME => ENV["GEM_HOME"])
+    bin.env_script_all_files(libexec/"bin", GEM_HOME: ENV["GEM_HOME"])
   end
 end

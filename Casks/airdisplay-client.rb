@@ -1,22 +1,22 @@
-cask 'airdisplay-client' do
-  version '3.2,23683'
-  sha256 'a18e1580508c8d7830b22132de01c4ed87ef9cbfcf862690e0ef44c1ad764292'
+cask "airdisplay-client" do
+  version "3.2,23683"
+  sha256 "a18e1580508c8d7830b22132de01c4ed87ef9cbfcf862690e0ef44c1ad764292"
 
   url "https://www.avatron.com/updates/software/airdisplay_macclient/admac-web-#{version.before_comma.no_dots}.zip"
-  name 'Air Display Client'
-  homepage 'https://avatron.com/applications/air-display/'
-
-  app 'Air Display.app'
+  name "Air Display Client"
+  homepage "https://avatron.com/applications/air-display/"
 
   livecheck do
     url "https://avatron.com/updates/software/admacclient-appcast.xml"
     strategy :sparkle
   end
 
+  app "Air Display.app"
+
   zap trash: [
-               '~/Library/Application Support/com.avatron.airdisplaymac.webstore',
-               '~/Library/Caches/com.avatron.airdisplaymac.webstore',
-               '~/Library/Preferences/com.avatron.airdisplaymac.webstore.plist',
-               '~/Library/Saved Application State/com.avatron.airdisplaymac.webstore.savedState',
-             ]
+    "~/Library/Application Support/com.avatron.airdisplaymac.webstore",
+    "~/Library/Caches/com.avatron.airdisplaymac.webstore",
+    "~/Library/Preferences/com.avatron.airdisplaymac.webstore.plist",
+    "~/Library/Saved Application State/com.avatron.airdisplaymac.webstore.savedState",
+  ]
 end

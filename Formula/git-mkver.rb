@@ -9,6 +9,6 @@ class GitMkver < Formula
   sha256 MKVER_SHA256
 
   def install
-    bin.install 'git-mkver'
+    bin.install "git-mkver"
   end
 end
