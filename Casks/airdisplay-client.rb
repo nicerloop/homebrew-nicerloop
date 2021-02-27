@@ -4,6 +4,7 @@ cask "airdisplay-client" do
 
   url "https://www.avatron.com/updates/software/airdisplay_macclient/admac-web-#{version.before_comma.no_dots}.zip"
   name "Air Display Client"
+  desc "Turn a computer into an extra display for another one"
   homepage "https://avatron.com/applications/air-display/"
 
   livecheck do

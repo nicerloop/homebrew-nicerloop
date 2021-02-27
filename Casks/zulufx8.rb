@@ -4,8 +4,8 @@ cask "zulufx8" do
 
   url "https://cdn.azul.com/zulu/bin/zulu#{version.after_comma}-jdk#{version.before_comma}-macosx_x64.dmg",
       referer: "https://www.azul.com/downloads/zulu/zulu-mac/"
-  appcast "https://api.azul.com/zulu/download/community/v1.0/bundles/latest/?jdk_version=8&os=macos&ext=dmg&bundle_type=jdk&javafx=true&release_status=ga"
   name "Azul Zulu Java 8 Standard Edition Development Kit"
+  desc "Zulu build of OpenJDK - free to use without restrictions"
   homepage "https://www.azul.com/downloads/zulu/zulu-mac/"
 
   livecheck do
@@ -20,4 +20,6 @@ cask "zulufx8" do
   depends_on macos: ">= :yosemite"
 
   pkg "Double-Click to Install ZuluFX #{version.major}.pkg"
+
+  uninstall pkgutil: "com.azulsystems.zulu.#{version.major}"
 end
