@@ -8,6 +8,14 @@ cask "zulufx8" do
   homepage "https://www.azul.com/downloads/zulu/zulu-mac/"
   appcast "https://api.azul.com/zulu/download/community/v1.0/bundles/latest/?jdk_version=8&os=macos&ext=dmg&bundle_type=jdk&javafx=true&release_status=ga"
 
+  livecheck do
+    url "https://api.azul.com/zulu/download/community/v1.0/bundles/latest/?jdk_version=8&os=macos&ext=dmg&bundle_type=jdk&javafx=true&release_status=ga"
+    regex(/url":"https:.*zulu(.*)-jdk(.*)-macos/i)
+    strategy :page_match do |page, regex|
+      page.scan(regex).map { |match| match[1] + "," + match[0] }
+    end
+  end
+
   depends_on macos: ">= :yosemite"
 
   pkg "Double-Click to Install ZuluFX #{version.major}.pkg"
