@@ -1,6 +1,6 @@
 cask "letsview" do
-  version "1.0.2.5,2041bafef0a821237fb33913c8d0a285"
-  sha256 "20857ad62619d035c004b0d86dec94a82060814e0358099799795e6718b3ac7c"
+  version "1.0.3.11,2041bafef0a821237fb33913c8d0a285"
+  sha256 "a899ff3392d57b1386b92cbfc77cdb61184b98ca0a119f025e98b8789cf649cb"
 
   # url "https://download.aoscdn.com/down.php?softid=letsview"
   url "https://d31gfrlvpyxnbz.cloudfront.net/letsview.pkg?#{version.after_comma}.pkg",
