@@ -9,6 +9,10 @@ cask "openemu-nonmetal" do
   desc "Retro video game emulation"
   homepage "https://openemu.org/"
 
+  caveats do
+    discontinued
+  end
+  
   auto_updates true
   conflicts_with cask: ["openemu-experimental", "openemu"]
 
