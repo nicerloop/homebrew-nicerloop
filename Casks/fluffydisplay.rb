@@ -7,5 +7,13 @@ cask "fluffydisplay" do
   desc "Manage virtual displays on your Mac"
   homepage "https://github.com/tml1024/FluffyDisplay"
 
+  livecheck do
+    url "https://github.com/tml1024/FluffyDisplay/releases.atom"
+    regex(/releases\/tag\/(.*)"/i)
+    strategy :page_match do |page, regex|
+      page.scan(regex).map { |match| match[0].gsub("(", ",").gsub(")", "") }
+    end
+  end
+
   app "FluffyDisplay.app"
 end
