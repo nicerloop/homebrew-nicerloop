@@ -9,7 +9,10 @@ cask "synology-ds-manager" do
 
   livecheck do
     url "https://swiftapps.skavans.ru/synology-ds-manager-mac/versions/appcast.xml"
-    strategy :sparkle
+    regex(/sparkle:version="([^"]*)" sparkle:shortVersionString="([^"]*)"/i)
+    strategy :page_match do |page, regex|
+      page.scan(regex).map { |match| match[1] + "," + match[0] }
+    end
   end
 
   app "SynologyDSManager.app"
