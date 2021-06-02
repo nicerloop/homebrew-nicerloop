@@ -6,8 +6,8 @@ class Hfsprescue < Formula
   sha256 "ea78392c6ed352944bf5e32a88ce504257a86da561b796ce49bf719f640f5c00"
 
   livecheck do
-    url "https://www.plop.at/en/hfsprescue/download.html"
-    regex(/hfsprescue-(.*)-precompiled.tar.gz>/i)
+    url "https://www.plop.at/en/hfsprescue/intro.html"
+    regex(/Latest version: (3.5),/i)
     strategy :page_match
   end
 
