@@ -5,8 +5,6 @@ class CmisWorkbench < Formula
   mirror "https://archive.apache.org/dist/chemistry/opencmis/1.1.0/chemistry-opencmis-workbench-1.1.0-full.zip"
   sha256 "c513d4568d6fc5631c82208c734f718e600ca694cf7b22af1c164bee07e70dc4"
 
-  bottle :unneeded
-
   depends_on "openjdk"
 
   def install
