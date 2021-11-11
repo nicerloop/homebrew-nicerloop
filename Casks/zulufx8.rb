@@ -1,7 +1,7 @@
 cask "zulufx8" do
   if Hardware::CPU.intel?
-    version "8.0.302,8.56.0.21-ca-fx"
-    sha256 "904f4497c87df3e8a9611af47718cd1a743081e7a2e32f5c6bf02682d0552482"
+    version "8.0.312,8.58.0.13-ca-fx"
+    sha256 "d7557b3b4f9136df08c18d6e9bbf40e9b2f48267bbfece692bad0f0c023d884a"
 
     url "https://cdn.azul.com/zulu/bin/zulu#{version.after_comma}-jdk#{version.before_comma}-macosx_x64.dmg",
         referer: "https://www.azul.com/downloads/zulu/zulu-mac/"
@@ -14,8 +14,8 @@ cask "zulufx8" do
       end
     end
   else
-    version "8.0.302,8.56.0.23-ca-fx"
-    sha256 "11fd4a652ffda4fdb614e3045b6396cde7068ec74068b6df7b5cbab6d575a4d0"
+    version "8.0.312,8.56.0.13-ca-fx"
+    sha256 "8ca17c40900a62d9d0e7d697cee0574ce4c3b6f2db7eab528287d341da77208c"
 
     url "https://cdn.azul.com/zulu/bin/zulu#{version.after_comma}-jdk#{version.before_comma}-macosx_aarch64.dmg",
         referer: "https://www.azul.com/downloads/zulu/zulu-mac/"
