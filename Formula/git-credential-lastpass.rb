@@ -1,7 +1,7 @@
 class GitCredentialLastpass < Formula
   desc "A credential helper for git to retrieve usernames and passwords from lastpass"
   homepage "https://github.com/nicerloop/macos-scripts"
-  url "https://github.com/nicerloop/macos-scripts.git", revision: "8dba1e636039612c595ed0434ff577d1cf856aad"
+  url "https://github.com/nicerloop/macos-scripts.git", branch: "main", revision: "8dba1e636039612c595ed0434ff577d1cf856aad"
   version "2021-12-07"
 
   depends_on "lastpass-cli"
