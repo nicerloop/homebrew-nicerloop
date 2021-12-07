@@ -5,6 +5,6 @@ class SafariExtensions < Formula
   version "2021-07-15"
 
   def install
-    bin.install "SafariExtensions.sh"
+    bin.install "SafariExtension.sh"
   end
 end
