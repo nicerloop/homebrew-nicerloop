@@ -1,8 +1,7 @@
 class GitCredentialLastpass < Formula
   desc "Credential helper for git to retrieve usernames and passwords from lastpass"
   homepage "https://github.com/nicerloop/macos-scripts"
-  url "https://github.com/nicerloop/macos-scripts.git", branch: "main", revision: "ac5ea502a12236875b369771b03aebc6d0c09689"
-  version "2021-12-07.2"
+  url "https://github.com/nicerloop/macos-scripts/archive/refs/tags/v1.2.1.tar.gz"
   depends_on "lastpass-cli"
   depends_on "pinentry-mac"
 
