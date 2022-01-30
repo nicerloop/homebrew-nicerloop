@@ -1,6 +1,6 @@
 cask "letsview" do
-  version "1.0.3.11,b2618c54ea83a9b6f7404b47df0a053e"
-  sha256 "a899ff3392d57b1386b92cbfc77cdb61184b98ca0a119f025e98b8789cf649cb"
+  version "1.1.0,b2618c54ea83a9b6f7404b47df0a053e"
+  sha256 "00d361fc438059d171ea6c00a271ada3f2eaac5a22153a9e61cce53f25c96599"
 
   # "https://download.aoscdn.com/down.php?softid=letsview", "User-Agent: Macintosh"
   url "https://download.apowersoft.info/letsview.pkg?#{version.after_comma}.pkg",
