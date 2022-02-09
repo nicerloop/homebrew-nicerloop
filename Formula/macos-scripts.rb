@@ -1,8 +1,8 @@
 class MacosScripts < Formula
   desc "Various command-line utility scripts for macOS"
   homepage "https://github.com/nicerloop/macos-scripts"
-  url "https://github.com/nicerloop/macos-scripts/archive/refs/tags/v1.5.0.tar.gz"
-  sha256 "1e6c1dfcca8d9640ba244106fe1be2537103c68c5b280ea576d5f91d0a8037e1"
+  url "https://github.com/nicerloop/macos-scripts/archive/refs/tags/v1.6.0.tar.gz"
+  sha256 "2dacb7b75420c7f1ab576c2cf17625c1df8056f8567ff4d3a4e91193f95a039a"
 
   def install
     bin.install "brew-bundle-leaves"
@@ -12,6 +12,7 @@ class MacosScripts < Formula
     bin.install "login-picture"
     bin.install "rsync-backup"
     bin.install "smb-volume-mount"
+    bin.install "sudo-pam-configure"
     bin.install "vnc-connect"
     bin.install "volume-icon"
     bin.install "webloc-to-url"
