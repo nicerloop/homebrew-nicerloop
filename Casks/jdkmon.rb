@@ -1,13 +1,13 @@
 cask "jdkmon" do
-  version "17.0.21"
+  version "17.0.22"
 
   if Hardware::CPU.intel?
     url "https://github.com/HanSolo/JDKMon/releases/download/#{version}/JDKMon-#{version}.pkg"
-    sha256 "41877f8493e7e1ecdedbeabb86d032f563e7ae0b3b33baedbc797b8c2333763a"
+    sha256 "037dec98bec5ab70bceb88aa4d7fbaf7d1baa92f29fa114e13547c76c6f6b4b0"
     pkg "JDKMon-#{version}.pkg"
   else
     url "https://github.com/HanSolo/JDKMon/releases/download/#{version}/JDKMon-#{version}-aarch64.pkg"
-    sha256 "ce3bdcec5a79bb009fa8e649dd440e4669c2088b55e559ef20727742493d7afb"
+    sha256 "3b76560f9353382209ef6eb8ee2561f603d6475b8fcaab20d0e207940276dc0b"
     pkg "JDKMon-#{version}-aarch64.pkg"
   end
 
