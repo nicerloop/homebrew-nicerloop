@@ -1,8 +1,8 @@
 class MacosScripts < Formula
   desc "Various command-line utility scripts for macOS"
   homepage "https://github.com/nicerloop/macos-scripts"
-  url "https://github.com/nicerloop/macos-scripts/archive/refs/tags/v1.6.0.tar.gz"
-  sha256 "2dacb7b75420c7f1ab576c2cf17625c1df8056f8567ff4d3a4e91193f95a039a"
+  url "https://github.com/nicerloop/macos-scripts/archive/refs/tags/v1.7.0.tar.gz"
+  sha256 "37264f45c06c087661f556a444687d606792380b4abbcba779685596ac932f80"
 
   def install
     bin.install "brew-bundle-leaves"
