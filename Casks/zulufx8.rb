@@ -10,7 +10,7 @@ cask "zulufx8" do
     sha256 "955e52158339a3d016820cb206d5d6bd2ba63d1a0f503d510720da4a087e90d7"
   end
 
-  url "https://cdn.azul.com/zulu/bin/zulu#{version.after_comma}-jdk#{version.before_comma}-macosx_#{arch}.dmg",
+  url "https://cdn.azul.com/zulu/bin/zulu#{version.csv.second}-jdk#{version.csv.first}-macosx_#{arch}.dmg",
       referer: "https://www.azul.com/downloads/zulu/zulu-mac/"
   name "Azul Zulu Java 8 Standard Edition Development Kit with JavaFX"
   desc "OpenJDK  with JavaFX distribution from Azul"
@@ -18,16 +18,14 @@ cask "zulufx8" do
 
   livecheck do
     url "https://api.azul.com/zulu/download/community/v1.0/bundles/latest/?jdk_version=#{version.major}&bundle_type=jdk&javafx=true&ext=dmg&os=macos&arch=#{choice}"
-    strategy :page_match do |page|
-      match = page.match(/zulu(\d+(?:\.\d+)*-.*?)-jdk(\d+(?:\.\d+)+)-macosx_#{arch}\.dmg/i)
-      next if match.blank?
-
-      "#{match[2]},#{match[1]}"
+    regex(/zulu(\d+(?:\.\d+)*-.*?)-jdk(\d+(?:\.\d+)+)-macosx_#{arch}\.dmg/i)
+    strategy :page_match do |page, regex|
+      page.scan(regex).map { |match| "#{match[1]},#{match[0]}" }
     end
   end
 
   conflicts_with cask: "zulu8"
-  depends_on macos: ">= :yosemite"
+  depends_on macos: ">= :mojave"
 
   pkg "Double-Click to Install Azul Zulu JDK #{version.major}.pkg"
 
