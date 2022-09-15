@@ -1,6 +1,6 @@
 cask "macos-catalina-patcher" do
-  version "1.4.4"
-  sha256 "092396a91a77b75b4a854c972e98241ab45fb853e5c8db14d1dd9eabe21b7235"
+  version "1.4.7"
+  sha256 "c71ac58e71373de1a38ae767ea4a0ec92ab48aade074f873178135d2190d8acb"
 
   # github.com was verified as official when first introduced to the cask
   url "https://github.com/dosdude1/macos-catalina-patcher/releases/download/#{version}/macOS.Catalina.Patcher.dmg",
