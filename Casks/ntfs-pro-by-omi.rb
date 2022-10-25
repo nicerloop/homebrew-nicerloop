@@ -14,7 +14,7 @@ cask "ntfs-pro-by-omi" do
     url "https://api.7littlemen.com/download/ntfsretail/appcast.xml"
   end
 
-  pkg "NTFS Pro by Omi Installer.signed.#{version}.pkg"
+  pkg "NTFS Pro by Omi Installer.signed.#{version.csv.first}.pkg"
 
   uninstall     quit:    "com.omni.mac.utility.website.ntfs",
                 kext:    "com.omni.ntfs-support.kext",
