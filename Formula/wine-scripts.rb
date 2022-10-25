@@ -4,10 +4,10 @@ class WineScripts < Formula
   url "https://github.com/nicerloop/wine-scripts/archive/refs/tags/v1.4.1.tar.gz"
   sha256 "3c5c2243d7edad589a3478a96241e767ba0cac7d3630cea0582350117a145b4d"
 
-  depends_on "winetricks"
+  depends_on "coreutils"
   depends_on "exiftool"
   depends_on "icoutils"
-  depends_on "coreutils"
+  depends_on "winetricks"
   # depends_on cask: "gcenx/wine/wine-crossover"
 
   def install

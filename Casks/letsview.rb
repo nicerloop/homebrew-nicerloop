@@ -3,7 +3,7 @@ cask "letsview" do
   sha256 "00d361fc438059d171ea6c00a271ada3f2eaac5a22153a9e61cce53f25c96599"
 
   # "https://download.aoscdn.com/down.php?softid=letsview", "User-Agent: Macintosh"
-  url "https://download.apowersoft.info/letsview.pkg?#{version.after_comma}.pkg",
+  url "https://download.apowersoft.info/letsview.pkg?#{version.csv.second}.pkg",
       verified: "apowersoft.info/letsview"
   name "LetsView"
   desc "Turn a computer into an Airplay display"

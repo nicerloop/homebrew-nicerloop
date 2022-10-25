@@ -9,10 +9,6 @@ cask "openemu-nonmetal" do
   desc "Retro video game emulation"
   homepage "https://openemu.org/"
 
-  caveats do
-    discontinued
-  end
-  
   auto_updates true
   conflicts_with cask: ["openemu-experimental", "openemu"]
 
@@ -51,4 +47,8 @@ cask "openemu-nonmetal" do
     "~/Library/Preferences/org.openemu.mGBA.plist",
     "~/Library/Saved Application State/org.openemu.OpenEmu.savedState",
   ]
+
+  caveats do
+    discontinued
+  end
 end
