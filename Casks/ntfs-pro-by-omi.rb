@@ -1,8 +1,8 @@
 cask "ntfs-pro-by-omi" do
-  version "1.2.1"
+  version "1.2.1,2022090701"
   sha256 "a59b515e77eeae44420c15448627526c121ffe37a92002bb50df76bf36c5ed15"
 
-  url "https://api.7littlemen.com/download/ntfsretail/NTFS%20Pro%20by%20Omi%20Installer.signed.#{version}.pkg",
+  url "https://api.7littlemen.com/download/ntfsretail/NTFS%20Pro%20by%20Omi%20Installer.signed.#{version.csv.first}.pkg",
       verified: "https://api.7littlemen.com/download/ntfsretail"
   name "NTFS Pro by Omi"
   name "xNTFS Pro"
@@ -11,6 +11,7 @@ cask "ntfs-pro-by-omi" do
 
   livecheck do
     strategy :sparkle
+    url "https://api.7littlemen.com/download/ntfsretail/appcast.xml"
   end
 
   pkg "NTFS Pro by Omi Installer.signed.#{version}.pkg"
