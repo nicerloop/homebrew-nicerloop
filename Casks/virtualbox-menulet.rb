@@ -5,7 +5,7 @@ cask "virtualbox-menulet" do
   url "https://github.com/cviebrock/VirtualBox-Menulet/releases/download/#{version}/VirtualBox.Menulet.#{version}.zip"
   appcast "https://github.com/cviebrock/VirtualBox-Menulet/releases.atom"
   name "Virtualbox Menulet"
-  desc "Easily launch VirtualBox machines from your macOS Menubar"
+  desc "Easily launch VirtualBox machines from your Menubar"
   homepage "https://github.com/cviebrock/VirtualBox-Menulet"
 
   app "VirtualBox Menulet 1.7/VirtualBox Menulet.app"

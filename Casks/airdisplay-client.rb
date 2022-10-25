@@ -2,7 +2,7 @@ cask "airdisplay-client" do
   version "3.2,23683"
   sha256 "a18e1580508c8d7830b22132de01c4ed87ef9cbfcf862690e0ef44c1ad764292"
 
-  url "https://www.avatron.com/updates/software/airdisplay_macclient/admac-web-#{version.before_comma.no_dots}.zip"
+  url "https://www.avatron.com/updates/software/airdisplay_macclient/admac-web-#{version.csv.first.no_dots}.zip"
   name "Air Display Client"
   desc "Turn a computer into an extra display for another one"
   homepage "https://avatron.com/applications/air-display/"
