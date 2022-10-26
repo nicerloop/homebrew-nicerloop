@@ -1,11 +1,11 @@
 cask "opencore-legacy-patcher" do
-  version "0.4.11"
-  sha256 "e7d87f580e03b328d48b4e87135418ac90eaef5ac44b8bfce9c76fa826ce2d9a"
+  version "0.5.0"
+  sha256 "bdc400371db8479b03534060484274f10bdd8d912c822d8592efa01a17c24814"
 
   url "https://github.com/dortania/OpenCore-Legacy-Patcher/releases/download/#{version}/OpenCore-Patcher-GUI.app.zip",
       verified: "https://github.com/dortania/OpenCore-Legacy-Patcher"
   name "OpenCore Legacy Patcher"
-  desc "OpenCore builder to run Big Sur (11.x) and Monterey (12.x) on unsupported macs"
+  desc "Patcher to run Big Sur, Monterey and Ventura (11.x-13.x) on unsupported Macs"
   homepage "https://dortania.github.io/OpenCore-Legacy-Patcher/"
 
   app "OpenCore-Patcher.app"
