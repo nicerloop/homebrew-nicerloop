@@ -7,5 +7,11 @@ cask "archi" do
   desc "ArchiMate Modelling Tool"
   homepage "https://www.archimatetool.com/"
 
+  livecheck do
+    strategy :page_match
+    url "https://github.com/archimatetool/archi/releases.atom"
+    regex(%r{releases/tag/release_(.*)"}i)
+  end
+
   app "Archi.app"
 end
