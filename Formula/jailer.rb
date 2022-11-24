@@ -1,8 +1,8 @@
 class Jailer < Formula
   desc "Database Subsetting and Relational Data Browsing Tool"
   homepage "https://wisser.github.io/Jailer"
-  url "https://github.com/Wisser/Jailer/releases/download/v12.8.1/jailer_12.8.1.zip"
-  sha256 "a9a4493d5f82871fdfc4a3513590d164ac50661d7480609d86625e1941c2f4e5"
+  url "https://github.com/Wisser/Jailer/releases/download/v12.8.2/jailer_12.8.2.zip"
+  sha256 "a5f0838b7363b05d614cf076e777e6578861828794ebb79f3e4ca2ca4a8c2c2b"
 
   depends_on "openjdk"
 
