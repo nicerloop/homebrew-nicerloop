@@ -1,9 +1,9 @@
 class Arx < Formula
   desc "Data Anonymization Tool"
   homepage "https://arx.deidentifier.org"
-  url "https://github.com/arx-deidentifier/arx/releases/download/v3.9.0/arx-3.9.0-osx-64.jar"
-  version "3.9.0"
-  sha256 "d7f9b98280fe2d866dddb01c2e3f0e09c336143b5218f688645c8825f0fdb3a2"
+  url "https://github.com/arx-deidentifier/arx/releases/download/v3.9.1/arx-3.9.1-osx-64.jar"
+  version "3.9.1"
+  sha256 "d410f22b9146335f510ec3e084c4cc70a695c78e0571cbb41b27896e88c0ed55"
 
   depends_on "openjdk"
 
