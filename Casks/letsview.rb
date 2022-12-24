@@ -12,5 +12,6 @@ cask "letsview" do
 
   uninstall pkgutil: [
     "MacLetsView.apowersoft.com",
+    "MacLetsView.wangxutech.com",
   ]
 end
