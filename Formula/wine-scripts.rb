@@ -6,8 +6,8 @@ class WineScripts < Formula
 
   depends_on "coreutils"
   depends_on "exiftool"
-  # depends_on "gcenx/wine/wine-crossover"
-  # depends_on "gcenx/wine/winetricks"
+  depends_on "gcenx/wine/wine-crossover@21"
+  depends_on "gcenx/wine/winetricks"
   depends_on "icoutils"
 
   def install
