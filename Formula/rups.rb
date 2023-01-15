@@ -1,8 +1,14 @@
 class Rups < Formula
   desc "PDF Diagnostic Tool for Reading and Updating PDF Syntax & Debugging PDF code"
   homepage "https://itextpdf.com/products/rups"
-  url "https://github.com/itext/i7j-rups/releases/download/7.2.4/iText7-RUPS-7.2.4-only-jars.zip"
-  sha256 "574861936aabdc6d0afdf230410185ceb98c734770e2cccff57b3c008fe552c5"
+  # url "https://github.com/itext/i7j-rups/releases/download/7.2.4/iText7-RUPS-7.2.4-only-jars.zip"
+  url "https://repo.itextsupport.com/artifactory/releases/com/itextpdf/itext-rups/7.2.5/itext-rups-7.2.5.jar"
+  sha256 "39da23a0d2e40468937c0792e814e72c42a4c28fedfdd05fc154dfaef0c12ed3"
+
+  livecheck do
+    strategy :git
+    url "https://github.com/itext/i7j-rups.git"
+  end
 
   depends_on "openjdk"
 
