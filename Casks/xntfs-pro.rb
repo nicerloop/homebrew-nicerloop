@@ -1,6 +1,6 @@
 cask "xntfs-pro" do
-  version "1.2.2,2022110301"
-  sha256 "1c6607cf00f72273b668c4a0ffd626b333b4a5037a4caaf31c454145228031b7"
+  version "1.2.3,2023020701"
+  sha256 "d3c56f5f2f13f149ddf02f160840e10bb9f405a5838059f9a75134861a19139f"
 
   url "https://api.7littlemen.com/download/ntfsretail/NTFS%20Pro%20by%20Omi%20Installer.signed.#{version.csv.first}.pkg",
       verified: "https://api.7littlemen.com/download/ntfsretail"
