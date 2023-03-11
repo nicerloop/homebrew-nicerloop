@@ -4,7 +4,7 @@ cask "epson-printer-drivers" do
 
   url "https://download.epson-europe.com/pub/download/6515/epson651532eu.dmg"
   name "Epson Printer Drivers"
-  desc ""
+  desc "Drivers for Epson printers"
   homepage "https://epson.com/"
 
   depends_on macos: ">= :el_capitan"
