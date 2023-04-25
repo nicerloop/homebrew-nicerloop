@@ -1,12 +1,11 @@
 class WineScripts < Formula
   desc "Command-line utility scripts for wine on macOS"
-  homepage "https://github.com/nicerloop/macos-scripts"
-  url "https://github.com/nicerloop/wine-scripts/archive/refs/tags/v1.5.1.tar.gz"
-  sha256 "97f55d0aabb35309b0f1778d92bac1ee3c53547fe87eeaec679c1e79fb112673"
+  homepage "https://github.com/nicerloop/wine-scripts"
+  url "https://github.com/nicerloop/wine-scripts/archive/refs/tags/v1.5.2.tar.gz"
+  sha256 "5a030ca46dd70b4c9c9f8ddac5a26cdc80db3bbf1006ff312fa194dbe55096cf"
 
   depends_on "coreutils"
   depends_on "exiftool"
-  # depends_on "gcenx/wine/wine-crossover" # cask
   depends_on "icoutils"
   depends_on "winetricks"
 
