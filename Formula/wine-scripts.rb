@@ -6,13 +6,11 @@ class WineScripts < Formula
 
   depends_on "coreutils"
   depends_on "exiftool"
-  depends_on "gcenx/wine/wine-crossover@21"
-  depends_on "gcenx/wine/winetricks"
+  # depends_on "gcenx/wine/wine-crossover" # cask
   depends_on "icoutils"
+  depends_on "winetricks"
 
   def install
-    bin.install "wine"
-    bin.install "wine-preloader"
     bin.install "wine-setup-dotnet48"
     bin.install "wine-wrap-application"
   end
