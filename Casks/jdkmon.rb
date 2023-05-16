@@ -1,5 +1,5 @@
 cask "jdkmon" do
-  version "17.0.59"
+  version "17.0.57"
 
   on_intel do
     url "https://github.com/HanSolo/JDKMon/releases/download/#{version}/JDKMon-#{version}.pkg"
