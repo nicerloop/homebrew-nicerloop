@@ -4,7 +4,7 @@ cask "macos-catalina-patcher" do
 
   # github.com was verified as official when first introduced to the cask
   url "https://github.com/dosdude1/macos-catalina-patcher/releases/download/#{version}/macOS.Catalina.Patcher.dmg",
-      verified: "github.com/dosdude1/macos-catalina-patcher"
+      verified: "github.com/dosdude1/macos-catalina-patcher/"
   name "macOS Catalina Patcher"
   desc "Installer builder for Catalina for unsupported Apple machines"
   homepage "http://dosdude1.com/catalina/"
