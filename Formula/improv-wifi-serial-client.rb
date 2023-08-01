@@ -1,8 +1,8 @@
 class ImprovWifiSerialClient < Formula
   desc "Configure an IoT device WiFi connection using improv-wifi serial protocol"
   homepage "https://github.com/nicerloop/improv-wifi-serial-client"
-  url "https://github.com/nicerloop/improv-wifi-serial-client/archive/refs/tags/v0.4.0.tar.gz"
-  sha256 "108a51cfa835dc0dcace40d7af70b9b6408f937f59b357ddb0b7e17e63291757"
+  url "https://github.com/nicerloop/improv-wifi-serial-client/archive/refs/tags/v0.4.1.tar.gz"
+  sha256 "faaf18712de47e31cd77d3f3ec4048b859b89ff359193eabfc3059961d7c80a0"
 
   bottle do
     root_url "https://github.com/nicerloop/homebrew-nicerloop/releases/download/improv-wifi-serial-client-0.4.0"
