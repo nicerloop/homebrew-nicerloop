@@ -22,11 +22,11 @@ jobs:
           PULL_REQUEST: ${{ github.event.pull_request.number }}
         run: brew pr-pull --debug --tap=$GITHUB_REPOSITORY $PULL_REQUEST
 
-      - name: Push commits
-        uses: Homebrew/actions/git-try-push@master
+      - name: Merge commits
+        uses: reitermarkus/automerge@e0cf02bcf5cbb9f9e9b359cc0ad3d9319bd5f427
         with:
           token: ${{ github.token }}
-          branch: master
+          pull-request: ${{ github.event.inputs.pull-request }}
 
       - name: Delete branch
         if: github.event.pull_request.head.repo.fork == false
