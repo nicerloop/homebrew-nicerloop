@@ -3,7 +3,7 @@ cask "double-trouble" do
   sha256 "c38766806c717093610bb73f9c23218bc430c4b6bdb20b3e99910c5c9d1a454c"
 
   url "https://github.com/nicerloop/doubletrouble/releases/download/v#{version}/DoubleTrouble_#{version}.jar",
-      verified: "github.com/nicerloop/doubletrouble"
+      verified: "github.com/nicerloop/doubletrouble/"
   name "double-trouble"
   desc "Scans directories for duplicate files"
   homepage "https://web.archive.org/web/20040624080055/http://folk.uio.no/vidarsk/"
