@@ -3,7 +3,7 @@ cask "cmis-workbench" do
   sha256 "c513d4568d6fc5631c82208c734f718e600ca694cf7b22af1c164bee07e70dc4"
 
   url "https://archive.apache.org/dist/chemistry/opencmis/#{version}/chemistry-opencmis-workbench-#{version}-full.zip",
-      verified: "archive.apache.org/dist/chemistry/opencmis"
+      verified: "archive.apache.org/dist/chemistry/opencmis/"
   name "cmis-workbench"
   desc "CMIS desktop client for developers"
   homepage "https://chemistry.apache.org/java/developing/tools/dev-tools-workbench.html"
