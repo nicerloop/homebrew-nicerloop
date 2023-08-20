@@ -14,4 +14,8 @@ class Jailer < Formula
       (bin/basename).write_env_script file, Language::Java.overridable_java_home_env
     end
   end
+
+  test do
+    system "#{bin}/jailer"
+  end
 end
