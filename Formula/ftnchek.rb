@@ -2,7 +2,6 @@ class Ftnchek < Formula
   desc "Static analyzer for Fortran 77 programs"
   homepage "https://www.dsm.fordham.edu/~ftnchek/"
   url "https://www.dsm.fordham.edu/~ftnchek/download/ftnchek-3.3.1.tar.gz"
-  version "3.1.1-1" # patched version
   sha256 "d92212dc0316e4ae711f7480d59e16095c75e19aff6e0095db2209e7d31702d4"
 
   livecheck do
@@ -12,7 +11,7 @@ class Ftnchek < Formula
 
   # depends_on "bison@1.875c" => :build # not truely necessary but maintains consistency
 
-  patch :Z do # version 3.1.1-1
+  patch :Z do
     url "https://www.dsm.fordham.edu/~ftnchek/download/ftnchek-3.3.1-varfmt.patch"
     sha256 "cc4372b0ab7daf6170b26e35125a65601c2204e1d0060d6aaadcffb1b2f31d38"
   end
