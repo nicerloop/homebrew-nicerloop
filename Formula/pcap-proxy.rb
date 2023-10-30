@@ -2,6 +2,7 @@ class PcapProxy < Formula
   desc "Userland TCP proxy application that captures the network flow into a .pcap file"
   homepage "https://github.com/irsl/pcap-proxy"
   license "Unlicense"
+  head "https://github.com/irsl/pcap-proxy.git"
 
   livecheck do
     skip "head-only formula"
