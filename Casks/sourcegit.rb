@@ -5,7 +5,7 @@ cask "sourcegit" do
   sha256 arm:   "fd3b8f5de0d76bf122f12a911c7eeb403143334c0b84ac001ffac70b48b48cb9",
          intel: "dc5f1674d63a213584258c8330713f89cdd5901afd3711d90c2f5ec8735d7972"
 
-  url "https://github.com/sourcegit-scm/sourcegit/releases/download/v#{version}/SourceGit.osx-#{arch}.zip"
+  url "https://github.com/sourcegit-scm/sourcegit/releases/download/v#{version}/sourcegit_#{version}.osx-#{arch}.zip"
   name "sourcegit"
   desc "Cross-platform GUI client for GIT users"
   homepage "https://github.com/sourcegit-scm/sourcegit"
