@@ -2,8 +2,8 @@
 class Pdfjam < Formula
   desc "Package for manipulating PDF files"
   homepage "https://github.com/rrthomas/pdfjam"
-  url "https://github.com/rrthomas/pdfjam/releases/download/v3.10/pdfjam-3.10.tar.gz"
-  sha256 "a1a2e422949ece10190034283ac5267d1ec160369cbc56b4a524dfdf1adf2310"
+  url "https://github.com/rrthomas/pdfjam/releases/download/v3.11/pdfjam-3.11.tar.gz"
+  sha256 "fcc85ec14fbb2363f02866b119aaada05b6b44af1c45224c22d407fffe0a8a2a"
   license "GPL-2.0-or-later"
 
   def install
