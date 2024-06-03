@@ -1,21 +1,23 @@
 cask "opencore-legacy-patcher" do
   version "1.5.0"
-  sha256 "1339b694899a0aec51dd32b20f9e7b84df6be08aac56837a94d2bfaf806c155e"
+  sha256 "15f70a148a5490331a4b9f2b3cb7403b594a049250edd537f95a4b083e9efa9d"
 
-  url "https://github.com/dortania/OpenCore-Legacy-Patcher/releases/download/#{version}/OpenCore-Patcher-GUI.app.zip",
+  url "https://github.com/dortania/OpenCore-Legacy-Patcher/releases/download/#{version}/OpenCore-Patcher.pkg",
       verified: "github.com/dortania/OpenCore-Legacy-Patcher/"
   name "OpenCore Legacy Patcher"
-  desc "Patcher to run Big Sur, Monterey and Ventura (11.x-13.x) on unsupported Macs"
+  desc "Patcher to run Big Sur and later (11.x-14.x) on unsupported Macs"
   homepage "https://dortania.github.io/OpenCore-Legacy-Patcher/"
 
-  app "OpenCore-Patcher.app", target: "/Library/Application Support/Dortania/OpenCore-Patcher.app"
+  pkg "OpenCore-Patcher.pkg"
 
-  postflight do
-    system "sudo", "rm", "-f", "/Applications/OpenCore-Patcher.app"
-    system "sudo", "ln", "-s", "/Library/Application Support/Dortania/OpenCore-Patcher.app", "/Applications"
-  end
-
-  uninstall_postflight do
-    system "sudo", "rm", "-f", "/Applications/OpenCore-Patcher.app"
-  end
+  uninstall launchctl: [
+              "com.dortania.opencore-legacy-patcher.auto-patch",
+              "com.dortania.opencore-legacy-patcher.macos-update",
+              "com.dortania.opencore-legacy-patcher.rsr-monitor",
+            ],
+            pkgutil:   "com.dortania.opencore-legacy-patcher",
+            delete:    [
+              "/Applications/OpenCore-Patcher.app",
+              "/Library/Application Support/Dortania",
+            ]
 end
