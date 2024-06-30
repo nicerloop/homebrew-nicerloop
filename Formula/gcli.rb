@@ -8,7 +8,7 @@ class Gcli < Formula
   depends_on "curl"
 
   def install
-    system "./configure", "--disable-silent-rules", *std_configure_args
+    system "./configure", "--prefix=#{prefix}"
     system "make", "install"
   end
 
