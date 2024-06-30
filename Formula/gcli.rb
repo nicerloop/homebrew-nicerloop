@@ -1,8 +1,8 @@
 class Gcli < Formula
   desc "Portable Git(hub|lab|tea) CLI tool"
   homepage "https://github.com/herrhotzenplotz/gcli"
-  url "https://herrhotzenplotz.de/gcli/releases/gcli-2.3.0/gcli-2.3.0.tar.gz"
-  sha256 "0418937505deb909b987397441adfcbd5e1cc032e8c733e2eca94bbac0cfe336"
+  url "https://herrhotzenplotz.de/gcli/releases/gcli-2.4.0/gcli-2.4.0.tar.gz"
+  sha256 "629b03b0a69d1df3c39b75517a5fc6cd254190be9e0dbde61595fe3ecddde3ce"
   license "BSD-2-Clause"
 
   depends_on "curl"
