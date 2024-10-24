@@ -6,6 +6,7 @@ class Gcli < Formula
   license "BSD-2-Clause"
 
   depends_on "curl"
+  depends_on "pkg-config"
 
   def install
     system "./configure", "--prefix=#{prefix}"
