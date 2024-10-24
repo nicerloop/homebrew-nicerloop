@@ -13,6 +13,6 @@ class Gcli < Formula
   end
 
   test do
-    system "#{bin}/gcli", "version"
+    system bin/"gcli", "version"
   end
 end

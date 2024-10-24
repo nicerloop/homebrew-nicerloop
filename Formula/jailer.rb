@@ -16,6 +16,6 @@ class Jailer < Formula
   end
 
   test do
-    system "#{bin}/jailer"
+    system bin/"jailer"
   end
 end

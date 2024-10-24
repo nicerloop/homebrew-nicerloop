@@ -30,7 +30,7 @@ class F2c < Formula
 
   test do
     # check if executable doesn't error out
-    system "#{bin}/f2c", "--version"
+    system bin/"f2c", "--version"
 
     # hello world test
     (testpath/"test.f").write <<~EOS
@@ -40,7 +40,7 @@ class F2c < Formula
             stop
             end
     EOS
-    system "#{bin}/f2c", "test.f"
+    system bin/"f2c", "test.f"
     assert_predicate (testpath/"test.c"), :exist?
     system ENV.cc.to_s, "-O", "-o", "test", "test.c", "-I#{Formula["libf2c"].opt_include}",
 "-L#{Formula["libf2c"].opt_lib}", "-lf2c"
