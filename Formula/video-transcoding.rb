@@ -1,8 +1,8 @@
 class VideoTranscoding < Formula
   desc "Tools to transcode, inspect and convert videos"
   homepage "https://github.com/donmelton/video_transcoding"
-  url "https://github.com/donmelton/video_transcoding/archive/refs/tags/0.25.3.tar.gz"
-  sha256 "e261dab181b8bba6c9f7b948b1808f5e3b98d68d131267dcfe1b765ccfc50adc"
+  url "https://github.com/donmelton/video_transcoding/archive/refs/tags/2025.01.09.tar.gz"
+  sha256 "13310dfa984acd3c7fe473f8a531076e70cfb55fd9caf0ec34bf28b868934032"
 
   depends_on "ffmpeg"
   depends_on "handbrake"
