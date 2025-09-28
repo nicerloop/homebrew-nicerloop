@@ -15,4 +15,5 @@ cask "sourcegit" do
   end
 
   app "SourceGit.app"
+  binary "#{appdir}/SourceGit.app/Contents/MacOS/SourceGit", target: "sourcegit"
 end
