@@ -14,6 +14,8 @@ cask "sourcegit" do
     strategy :github_releases
   end
 
+  depends_on macos: ">= :big_sur"
+
   app "SourceGit.app"
   binary "#{appdir}/SourceGit.app/Contents/MacOS/SourceGit", target: "sourcegit"
 end
