@@ -8,7 +8,5 @@ cask "replaywebpage" do
   desc "Web Archive Replay"
   homepage "https://replayweb.page/"
 
-  depends_on macos: ">= :monterey"
-
   app "ReplayWeb.page.app"
 end

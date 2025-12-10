@@ -8,7 +8,5 @@ cask "archivewebpage" do
   desc "Interactive browser-based web archiving"
   homepage "https://archiveweb.page/"
 
-  depends_on macos: ">= :monterey"
-
   app "ArchiveWeb.page.app"
 end

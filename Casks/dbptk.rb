@@ -11,7 +11,5 @@ cask "dbptk" do
   desc "Set of tools to store relational databases in a standard archival format"
   homepage "https://database-preservation.com/"
 
-  depends_on macos: ">= :big_sur"
-
   app "dbptk-desktop.app"
 end
